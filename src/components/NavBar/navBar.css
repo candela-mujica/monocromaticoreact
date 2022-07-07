@@ -1,0 +1,43 @@
+/* .nav_brand */
+
+body{
+    background-color: #ded5ca;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ } 
+
+.nav_list{
+    display: flex;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #a67250;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: right;
+}
+
+.nav_link{
+    flex-direction: row;
+    margin-right: 10px;
+    color: #40290d;
+}
+
+li{
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #ded5ca;
+}
+
