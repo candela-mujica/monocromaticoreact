@@ -1,5 +1,10 @@
 /* .nav_brand */
 
+*{
+    margin: 0;
+    padding: 0;
+ } 
+
 body{
     background-color: #ded5ca;
     height: auto;
@@ -10,6 +15,7 @@ body{
 
 .nav_list{
     display: flex;
+    padding-top: 16px;
 }
 
 .nav{
@@ -41,3 +47,7 @@ nav ul li a:hover{
     color: #ded5ca;
 }
 
+.logo{
+    height: 50px;
+    width: auto;
+}

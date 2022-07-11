@@ -1,5 +1,6 @@
 import React from 'react';
-import './navBar.css'
+import './navBar.css';
+import CartWidget from '../CartWidget';
 
 export const NavBar = () => {
     return (
@@ -7,12 +8,9 @@ export const NavBar = () => {
     <div className="container">
       <nav className="nav">
         <a href="index.jsx">
-            <img src="./Imagenes/Logo.webp" alt="logo de monocromático handmade"/>
+            <img src="./Imagenes/Logo.webp" alt="logo de monocromático handmade" className="logo"/>
         </a>
         <ul className="nav_list">
-          <li>
-            <a className="nav_link" href="a">Barbijos</a>
-          </li>
           <li>
             <a className="nav_link" href="a">Bijouterie</a>
           </li>
@@ -24,6 +22,11 @@ export const NavBar = () => {
           </li>
           <li>
             <a className="nav_link" href="a">Contacto</a>
+          </li>
+          <li>
+            <a className="nav_link" href="a">
+              <CartWidget/>
+            </a>
           </li>
         </ul>
       </nav>
