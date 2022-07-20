@@ -4,7 +4,6 @@ import CartWidget from '../CartWidget';
 
 export const NavBar = () => {
     return (
-    <body>
     <div className="container">
       <nav className="nav">
         <a href="index.jsx">
@@ -31,7 +30,6 @@ export const NavBar = () => {
         </ul>
       </nav>
     </div>
-    </body>
     );
 }
 
