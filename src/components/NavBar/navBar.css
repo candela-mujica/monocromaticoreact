@@ -21,7 +21,7 @@ body{
 .nav{
     display: flex;
     flex-direction: row;
-    background-color: #a67250;
+    background-color: #9D7456;
     padding: 10px;
     justify-content: space-between;
     align-items: right;
