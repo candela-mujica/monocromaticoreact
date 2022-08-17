@@ -2,16 +2,26 @@
     display: block;
     width: 300px;
     margin: 10px;
+    padding-bottom: 80px;
 }
 
 .product img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    margin-right: 10px;
 }
 
-.product p{
+.title{
     color: #40290d;
     margin-top: 10px;
     font-size: 2rem;
+    text-align: center;
+}
+
+.price{
+    color: #40290d;
+    margin-top: 8px;
+    font-size: 1.5rem;
+    text-align: center;
 }

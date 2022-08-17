@@ -1,6 +1,6 @@
 .itemCart {
     display: flex;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #40290d;
     max-width: 500px;
     margin: 1rem auto;
 }
@@ -8,4 +8,31 @@
 .itemCart img {
     width: 200px;
     margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.nombre{
+    color: #40290d;
+    font-size: 1.2rem;
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+.dato{
+    color: #40290d;
+    font-size: 1.2rem;
+    padding-bottom: 8px;
+}
+
+.eliminar{
+    color: #40290d;
+    padding: 4px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    border-color: #40290d;
+    background-color: #ded5ca;
+}
+
+.eliminar:hover{
+    color: #9D7456;
 }

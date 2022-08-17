@@ -20,3 +20,16 @@
     margin: 10px;
     color: #40290d;
 }
+
+.precio{
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.link{
+    color: #40290d;
+    text-decoration: underline;
+    padding-top: 10px;
+    font-size: 1.3rem;
+    padding-right: 20px;
+}

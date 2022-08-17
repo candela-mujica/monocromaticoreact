@@ -20,11 +20,13 @@ export const ItemDetail = ({data}) => {
                 <img className="detail__image" src={data.image} alt="" />
                 <div className="content">
                     <h1>{data.title}</h1>
+                    <h2 className="precio">${data.price}</h2>
                     {
                         goToCart
-                        ? <Link to='/cart'>Terminar compra</Link>
+                        ? <Link to='/cart' className="link">Terminar compra</Link>
                         :<ItemCount initial={1} stock={10} onAdd={onAdd}/>
-                    }                   
+                    }
+                    <Link to='/' className="link">Agregar más productos</Link>                 
                 </div>
             </div>
         </div>

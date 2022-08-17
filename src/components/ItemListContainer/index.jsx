@@ -4,8 +4,6 @@ import ItemList from '../ItemList';
 import Title from '../Title';
 import {useParams} from 'react-router-dom';
 
-
-
 export const ItemListContainer = ({texto}) => {
     const [data, setData] = useState([]);
 

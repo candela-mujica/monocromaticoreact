@@ -1,0 +1,36 @@
+.vacio{
+    padding: 40px;
+    margin-left: 20px;
+    color: #40290d;
+    font-size: 2rem;
+}
+
+.agregar{
+    padding: 40px;
+    margin-left: 20px;
+    color: #40290d;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.total{
+    padding-bottom: 20px;
+    color: #40290d;
+    font-size: 1.5rem;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.terminar{
+    color: #40290d;
+    margin-left: 30px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 3px;
+    border-color: #40290d;
+    background-color: #ded5ca;
+}
+
+.terminar:hover{
+    color: #9D7456;
+}

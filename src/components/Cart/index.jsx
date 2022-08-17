@@ -1,3 +1,4 @@
+import './cart.css';
 import {addDoc, collection, getFirestore} from 'firebase/firestore';
 import React from 'react';
 import {Link} from 'react-router-dom';
@@ -11,7 +12,7 @@ const Cart = () => {
         buyer: {
             name: 'x',
             email: 'x',
-            phone: 'x',
+            message: 'x',
             adress: 'x',
         },
         items: cart.map(product => ({id: product.id, title: product.title, price: product.price, quantity: product.quantity})),
@@ -28,8 +29,8 @@ const Cart = () => {
     if (cart.length === 0) {
         return (
             <>
-                <p>Carrito vacío</p>
-                <Link to='/'>Agregar productos</Link>
+                <p className="vacio">Carrito vacío</p>
+                <Link to='/' className="agregar">Agregar productos</Link>
             </>
         );
     }
@@ -39,8 +40,8 @@ const Cart = () => {
             {
                 cart.map(product => <ItemCart key={product.id} product={product}/>)
             }
-            <p>Total: ${totalPrice()}</p>
-            <button onClick={handleClick}>Terminar compra</button>
+            <p className="total">Total: ${totalPrice()}</p>
+            <button onClick={handleClick} className="terminar">Terminar compra</button>
         </>
     )
 }
