@@ -6,7 +6,7 @@ import {useCartContext} from '../../context/CartContext';
 import ItemCart from '../ItemCart';
 
 const Cart = () => {
-    const {cart, totalPrice} = useCartContext();
+    const {cart, totalPrice, clearCart} = useCartContext();
 
     const orden = {
         buyer: {
@@ -25,7 +25,10 @@ const Cart = () => {
         addDoc(ordenesCollection, orden)
         .then(({id}) => console.log(id))
     }
-
+    
+    const clear = () {
+    clearCart()
+    }
     if (cart.length === 0) {
         return (
             <>
@@ -42,6 +45,7 @@ const Cart = () => {
             }
             <p className="total">Total: ${totalPrice()}</p>
             <button onClick={handleClick} className="terminar">Terminar compra</button>
+            <button oncClick={clear}> Borrar cart  </button>
         </>
     )
 }
