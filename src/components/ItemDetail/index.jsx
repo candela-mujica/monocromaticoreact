@@ -26,7 +26,9 @@ export const ItemDetail = ({data}) => {
                         ? <Link to='/cart' className="link">Terminar compra</Link>
                         :<ItemCount initial={1} stock={10} onAdd={onAdd}/>
                     }
-                    <Link to='/' className="link">Agregar más productos</Link>                 
+                    {
+                        <Link to='/' className="link">Agregar más productos</Link>
+                    }
                 </div>
             </div>
         </div>

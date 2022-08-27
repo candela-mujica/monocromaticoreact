@@ -5,3 +5,29 @@
     padding: 10px;
     text-align: center;
 }
+
+.cant{
+    padding: 5px;
+    margin-bottom: 10px;
+    color: #40290d;
+    border-color: #40290d;
+}
+
+.cant:hover{
+    color: #9D7456;
+}
+
+.span{
+    padding: 10px;
+}
+
+.boton{
+    padding: 10px;
+    color: #40290d;
+    border-radius: 1px;
+    border-color: #40290d;
+}
+
+.boton:hover{
+    color: #9D7456;
+}
